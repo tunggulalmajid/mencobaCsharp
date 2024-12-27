@@ -11,8 +11,11 @@ namespace cobanet
         static void Main(string[] args)
         {
             Console.Write("masukkan kata >> ");
+            // inputan
             string tanya = Console.ReadLine();
             Console.WriteLine($"kata yang anda masukkan adalah {tanya}");
+            
+            // perkondisian
             if (tanya.Length > 5) 
             {
                 Console.WriteLine("kata yang anda masukkan lebih dari 5 karakter");
@@ -22,6 +25,8 @@ namespace cobanet
                 Console.WriteLine("kata yang anda masukkan kurang dari 5 karakter");
             }
             Console.Write("Masukkan angka >> ");
+
+            //casting ke int
             int angka = Convert.ToInt32(Console.ReadLine());
             if (angka < tanya.Length)
             {
@@ -34,6 +39,36 @@ namespace cobanet
             else
             {
                 Console.WriteLine($"{angka} lebih besar daripada {tanya.Length}");
+            }
+
+            angka += 25;
+            Console.WriteLine(angka);
+
+            //increment dan degrement
+            angka++;
+            Console.WriteLine(angka);
+            angka--;
+            Console.WriteLine(angka);
+
+            // prefiks dan postfiks
+            // ++x dan x++
+            Console.ReadLine();
+
+            //pengulangan 
+            //while statement
+            int x = 1;
+            while (x < 5)
+            {
+                if (x == 4)
+                {
+                    x++;
+                    continue;
+                }
+                else
+                {
+                    Console.WriteLine(x);
+                    x++;
+                }
             }
 
             Console.ReadLine();
