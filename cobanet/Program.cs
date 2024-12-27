@@ -37,6 +37,37 @@ namespace cobanet
             }
 
             Console.ReadLine();
+
+            // do while (checking di awal )
+            int c = 0;
+            do
+            {
+                Console.WriteLine(c);
+                c++;
+            } while (c < 5);
+            Console.ReadLine();
+
+            // for 
+            // rumus untuk for : for (inisialisasi;kondisi;increment)
+            string batas = "abcde";
+            for (int i = 0; i < batas.Length; i++)
+            {
+                Console.WriteLine(i);
+            }
+            Console.ReadLine();
+
+            //foreach i in batas
+            //{
+            //    Console.WriteLine(i);
+            //}
+            
+
+
+
+
+
+
+
         }
     }
 }
